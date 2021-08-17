@@ -1,4 +1,4 @@
-name: Testing
+name: Testing | AutoLabel
 on: [pull_request]
 jobs:
   review:
