@@ -1,0 +1,14 @@
+name: Testing
+on: [pull_request]
+jobs:
+  review:
+    name: Review
+    runs-on: ubuntu-latest
+    steps:
+      - name: Review
+        uses: Garlic-Team/Auto-Label@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEWS: 2
+          NEED_REVIEW: "need review"
+          APPROVED_REVIEW: "approved"
