@@ -6,10 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Review
-        uses: Garlic-Team/Auto-Label@main
-        env:
-          TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        uses: xHyroM/testaction@main
         with:
-          REVIEWS: 1
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEWS: 2
           NEED_REVIEW: "need review"
           APPROVED_REVIEW: "approved"
