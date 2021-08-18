@@ -8,7 +8,7 @@ jobs:
       - name: Review
         uses: Garlic-Team/Auto-Label@main
         with:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TOKEN: ${{ secrets.ACCESS_TOKEN }}
           REVIEWS: 1
           NEED_REVIEW: "need review"
           APPROVED_REVIEW: "approved"
