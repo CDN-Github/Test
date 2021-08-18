@@ -12,3 +12,5 @@ jobs:
           REVIEWS: 1
           NEED_REVIEW: "need review"
           APPROVED_REVIEW: "approved"
+        env:
+          TOKEN: ${{ secrets.ACCESS_TOKEN }}
