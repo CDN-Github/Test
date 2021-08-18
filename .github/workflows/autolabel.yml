@@ -8,7 +8,7 @@ jobs:
       - name: Review
         uses: xHyroM/testaction@main
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REVIEWS: 2
           NEED_REVIEW: "need review"
           APPROVED_REVIEW: "approved"
