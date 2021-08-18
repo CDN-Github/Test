@@ -7,10 +7,8 @@ jobs:
     steps:
       - name: Review
         uses: Garlic-Team/Auto-Label@main
-        with:
-          TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        env:
           REVIEWS: 1
           NEED_REVIEW: "need review"
           APPROVED_REVIEW: "approved"
-        env:
           TOKEN: ${{ secrets.ACCESS_TOKEN }}
