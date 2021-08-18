@@ -10,5 +10,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REVIEWS: 1
-          NEED_REVIEW: "need%20review"
+          NEED_REVIEW: "need review"
           APPROVED_REVIEW: "approved"
